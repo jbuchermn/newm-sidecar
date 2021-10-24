@@ -10,6 +10,16 @@ Quickly use your tablet / phone / ... as a secondary screen for [newm](https://g
 
 work together.
 
+## Setup
+
+Install python dependencies, then add
+
+```bash
+alias newm-sidecar="bash /path/to/newm-sidecar.sh"
+```
+
+to your `.bashrc` / `.zshrc` / ...
+
 ## Demo
 
 Yet to come, once newm works properly with multiple outputs

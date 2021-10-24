@@ -5,7 +5,6 @@ SCRIPTDIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 newm-cmd open-virtual-output virt-1
 trap 'newm-cmd close-virtual-output virt-1' EXIT
 
-echo "Guacamole QR code"
 URL=$(python3 $SCRIPTDIR/newm_sidecar.py)
 URL=${URL/localhost/$ADDR}
 qrencode -m 2 -t utf8 <<< "$URL"
