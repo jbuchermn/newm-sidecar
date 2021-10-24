@@ -10,4 +10,4 @@ echo "Guacamole QR code"
 URL=$(python3 $SCRIPTDIR/newm_sidecar.py)
 URL=${URL/localhost/$ADDR}
 qrencode -m 2 -t utf8 <<< "$URL"
-# wayvnc --output=virt-1 --max-fps=30 localhost 5900
+wayvnc --output=virt-1 --max-fps=30 localhost 5900
