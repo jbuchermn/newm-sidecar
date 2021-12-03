@@ -13,4 +13,5 @@ fi
 newm-cmd open-virtual-output virt-1
 trap 'newm-cmd close-virtual-output virt-1' EXIT
 
+sleep .2
 wayvnc --output=virt-1 --max-fps=30 localhost 5900
